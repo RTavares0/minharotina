@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Minha Rotina</title>
+	<style>
+		table, th, td {
+			border: 1px solid black;
+			border-collapse: collapse;
+			padding: 10px;
+		}
+		th {
+			background-color: #ddd;
+		}
+	</style>
+</head>
+<body>
+	<h1>Minha Rotina</h1>
+	<table>
+		<tr>
+			<th>Dias</th>
+			<th>Horários</th>
+			<th>Atividades</th>
+			<th>Concluído?</th>
+		</tr>
+		<tr>
+			<td>Segunda-feira</td>
+			<td>9h00 - 10h00</td>
+			<td>Programação Orientada a Objetos</td>
+			<td><input type="checkbox" id="poo-1"></td>
+		</tr>
+		<tr>
+			<td>Segunda-feira</td>
+			<td>10h00 - 11h00</td>
+			<td>Exercícios práticos de POO</td>
+			<td><input type="checkbox" id="poo-2"></td>
+		</tr>
+		<tr>
+			<td>Quarta-feira</td>
+			<td>9h00 - 10h00</td>
+			<td>Desenvolvimento de Sistemas</td>
+			<td><input type="checkbox" id="dev-1"></td>
+		</tr>
+		<tr>
+			<td>Quarta-feira</td>
+			<td>10h00 - 11h00</td>
+			<td>Desenvolvimento de projetos de sistemas com exemplos práticos</td>
+			<td><input type="checkbox" id="dev-2"></td>
+		</tr>
+		<tr>
+			<td>Quinta-feira</td>
+			<td>9h00 - 10h00</td>
+			<td>Banco de dados</td>
+			<td><input type="checkbox" id="bd-1"></td>
+		</tr>
+		<tr>
+			<td>Quinta-feira</td>
+			<td>10h00 - 11h00</td>
+			<td>Desenvolvimento de projetos de banco de dados com exemplos práticos</td>
+			<td><input type="checkbox" id="bd-2"></td>
+		</tr>
+		<tr>
+			<td>Sexta-feira</td>
+			<td>9h00 - 10h00</td>
+			<td>Design de interação</td>
+			<td><input type="checkbox" id="di-1"></td>
+		</tr>
+		<tr>
+			<td>Sexta-feira</td>
+			<td>10h00 - 11h00</td>
+			<td>Desenvolvimento de projetos de design de interação com exemplos práticos</td>
+			<td><input type="checkbox" id="di-2"></td>
+		</tr>
+	</table>
+
+	<script>
+		// função para marcar/desmarcar checkboxes
+		function toggleCheck(id) {
+			var checkbox = document.getElementById(id);
+			checkbox.checked = !checkbox.checked;
+		}
+
+		// adicionar
